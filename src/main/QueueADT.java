@@ -16,6 +16,21 @@ public class QueueADT
 	int dequeue()
 	{
 		int deleted = 0;
+		//checking whether the
+		if(isEmpty())
+		{
+		System.out.print("The Stack in Empty ");
+		}
+		else
+		{
+		deleted=queue[0];
+		for (int i=0; i<queue.length; i++)
+		{
+			queue[i]=queue[i+1];
+		}
+		queue[(queue.length)-1]= Integer.parseInt(null);
+		}
+
 
 
 		return deleted;
